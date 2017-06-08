@@ -7,7 +7,7 @@
         <div class="logo"><h1>ThyTin</h1></div>
       </router-link>
       <nav :class="[{'showup':menuShowUp},'navigator']" v-scroll="menuClickHandler">
-        <router-link class="navigator-button" to="/" @click="menuShowUp=false">
+        <router-link class="navigator-button" to="/home" @click="menuShowUp=false">
           <div>Home</div>
         </router-link>
         <router-link class="navigator-button" to="/posts" @click="menuShowUp=false">

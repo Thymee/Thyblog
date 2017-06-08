@@ -1,7 +1,7 @@
 export default[
   {
     path: '/',
-    component: resolve => require(['@/components/Home'], resolve)
+    component: resolve => require(['@/components/Blog'], resolve)
   }, {
     path: '/posts',
     component: resolve => require(['@/components/Blog'], resolve),
@@ -14,6 +14,9 @@ export default[
         component: resolve => require(['@/components/PostDetail'], resolve)
       }
     ]
+  }, {
+    path: '/home',
+    component: resolve => require(['@/components/Home'], resolve)
   }, {
     path: '/about',
     component: resolve => require(['@/components/About'], resolve)
